@@ -1,0 +1,17 @@
+services:
+  mysql-ml:
+    image: mysql:5.7
+    container_name: my-mysql-ml-container
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: mydatabase
+      MYSQL_USER: myuser
+      MYSQL_PASSWORD: mypassword
+    ports:
+      - "3306:3306"  # Expose MySQL port
+    volumes:
+      - mysql_ml_data:/var/lib/mysql  # Persist MySQL data
+
+    
+volumes:
+  mysql_ml_data:
