@@ -58,7 +58,6 @@ To run the scraper, execute the following commands:
 ```
 cd mlscraper
 scrapy crawl mlscraper -a s=<your_search_term>
-
 ```
 
 
