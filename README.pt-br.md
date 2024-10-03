@@ -46,20 +46,15 @@ Para mais informações sobre sua utilização, leia as instruções abaixo.
 
 
 ```
-
 pip install scrapy pymysql
-
-
 ```
 
 3. O arquivo docker-compose.yml contém um banco de dados SQL pronto para uso. Para inicializá-lo, com o Docker instalado e em execução, digite os seguintes comandos:
 
 
 ```
-
 cd docker
 docker-compose up -d
-
 ```
 
 
@@ -71,18 +66,13 @@ Para executar o scraper, execute os seguintes comandos:
 
 
 ```
-
 cd mlscraper
 scrapy crawl mlscraper -a s=<seu_termo_de_busca>
-
 ```
 
 
 ## Exemplo:
 
 ```
-
 scrapy crawl mlscraper -a s=smartphone
-
-
 ```
